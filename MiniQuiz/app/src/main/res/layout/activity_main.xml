@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhaziraoskenbayeva.miniquiz.MainActivity"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    >
+
+    <TextView
+        android:text="2+2=?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMessage"
+        android:textAlignment="center"
+        style="@style/BigTextStyle"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/ansText"
+        android:textAlignment="center"
+        android:hint="type here"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:text="Write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bnWrite"/>
+
+        <Button
+            android:text="Read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bnRead"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewFile"
+            android:text="file text here"/>
+
+        </LinearLayout>
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:onClick="bnNext"/>
+
+    <fragment
+        android:name="com.example.zhaziraoskenbayeva.miniquiz.AnimalListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linLayoutFlags"/>
+
+</LinearLayout>
