@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ServicesExample</string>
+    <string name="title_activity_notify_receiver">NotifyReceiverActivity</string>
+</resources>
